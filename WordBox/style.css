@@ -10,15 +10,32 @@ body {
   color: rgba(0, 0, 0, 0);
   /*width: 50%;*/
 
-  width: 28%;
-  padding-bottom: 5%;
-  padding-top:  5%;
-  margin-top: 5%;
+  width: 20%;
+  padding-bottom: 1%;
+  padding-top: 1%;
+  margin: 3%;
   /*height: 0;*/
   text-align: center;
   background-color: white;
   border-radius: 5px;
-  border: 3px solid grey;
+  border: 2px solid grey;
+}
+
+.guess {
+  font-style: 'Dosis';
+  font-size: 50px;
+  color: rgba(0, 0, 0, 1);
+  /*width: 50%;*/
+
+  width: 20%;
+  padding-bottom: 1%;
+  padding-top: 1%;
+  margin: 3%;
+  /*height: 0;*/
+  text-align: center;
+  background-color: white;
+  border-radius: 5px;
+  border: 2px solid grey;
 }
 
 #user-guess {
@@ -29,5 +46,5 @@ body {
   /*width: 75%;*/
   display:  flex;
   justify-content:  space-between;
-  border:  1px solid black;
+  /*border:  1px solid black;*/
 }

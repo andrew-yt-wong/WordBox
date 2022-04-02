@@ -19,7 +19,15 @@
   <body>
     <!-- <div id="root"></div> -->
     <div class="container">
-      <!-- <div id="row1" class="mrow">
+      <div>
+        <div><span style='color: green;'>THIS</span> is the correct spot in this word.</div>
+        <div><span style='color: #EDAE49;'>THIS</span> is the incorrect spot in this word.</div>
+        <div><span style='color: #9C89B8;'>THIS</span> is the correct spot in another word.</div>
+        <div><span style='color: #D1495B;'>THIS</span> is the incorrect spot in another word.</div>
+        <div><span style='color: black;'>THIS</span> is not in any word.</div>
+      </div>
+      
+      <div id="row1" class="mrow">
         <div id="letter1" class="letter"></div>
         <div id="letter2" class="letter"></div>
         <div id="letter3" class="letter"></div>
@@ -35,9 +43,21 @@
         <div id="letter7" class="letter"></div>
         <div id="letter8" class="letter"></div>
         <div id="letter9" class="letter"></div>
-      </div> -->
+      </div>
 
-      <div>
+      <hr>
+
+      <div id="row4" class="mrow">
+        <!-- <form id="guess" action="" autocomplete="off" method="post"> -->
+          <input id="guess1" class="guess" minlength="1" maxlength="1" style="text-transform: uppercase;" onkeydown="return /[a-z]/i.test(event.key)">
+          <input id="guess2" class="guess" minlength="1" maxlength="1" style="text-transform: uppercase;" onkeydown="return /[a-z]/i.test(event.key)">
+          <input id="guess3" class="guess" minlength="1" maxlength="1" style="text-transform: uppercase;" onkeydown="return /[a-z]/i.test(event.key)">
+        <!-- </form> -->
+      </div>
+      <div id="attempts">20</div>
+      <div id="list"></div>
+
+      <!-- <div>
         <div><span style='color: green;'>THIS</span> is the correct spot in this word.</div>
         <div><span style='color: #EDAE49;'>THIS</span> is the incorrect spot in this word.</div>
         <div><span style='color: #9C89B8;'>THIS</span> is the correct spot in another word.</div>
@@ -87,7 +107,7 @@
         </form>
         <div id="attempts">20</div>
       </div>
-    </div>
+    </div> -->
 
     <script src="wordbank3.js"></script>
     <script src="gamebank3.js"></script>
