@@ -1,7 +1,11 @@
 body {
   font-style: 'Dosis';
-  font-size: 25px;
+  font-size: 20px;
   /*background-color: #2c2c34;*/
+}
+
+#genius {
+  width: 30%;
 }
 
 .letter {
@@ -10,7 +14,7 @@ body {
   color: rgba(0, 0, 0, 0);
   /*width: 50%;*/
 
-  width: 20%;
+  width: 25%;
   padding-bottom: 1%;
   padding-top: 1%;
   margin: 3%;
@@ -27,7 +31,7 @@ body {
   color: rgba(0, 0, 0, 1);
   /*width: 50%;*/
 
-  width: 20%;
+  width: 25%;
   padding-bottom: 1%;
   padding-top: 1%;
   margin: 3%;

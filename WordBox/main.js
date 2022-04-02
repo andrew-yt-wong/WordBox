@@ -73,6 +73,10 @@ $(document).ready(function() {
                 $("#list").prepend("<div><span style='color: " + colors[0] + ";'>" + guess[0] 
                     + "</span><span style='color: " + colors[1] + ";'>" + guess[1] 
                     + "</span><span style='color: " + colors[2] + ";'>" + guess[2] + "</span></div>");
+
+                $("#" + guess[0].toLowerCase()).css("background", colors[0]);
+                $("#" + guess[1].toLowerCase()).css("background", colors[1]);
+                $("#" + guess[2].toLowerCase()).css("background", colors[2]);
             }
         }
         // else if (event.which == 8) {
