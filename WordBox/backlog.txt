@@ -1,3 +1,4 @@
 - Fix highlight being able to see the answers issue
 - remove words from color count once they are in
 - remove repeat letters from issues
+- make it so that you cannot score a word already found

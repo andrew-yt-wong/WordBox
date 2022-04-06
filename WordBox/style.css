@@ -4,8 +4,12 @@ body {
   /*background-color: #2c2c34;*/
 }
 
-#genius {
+#game {
   width: 30%;
+}
+
+#board {
+  width: 50%;
 }
 
 .letter {

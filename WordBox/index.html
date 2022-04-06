@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
 
-    <title>Word Box</title>
+    <title>WordBox</title>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
@@ -30,76 +30,81 @@
         <div><span style='color: black;'>THIS</span> is not in any word.</div>
       </div>
 
-      <div id="genius">
-      <div id="row1" class="mrow">
-        <div id="letter1" class="letter"></div>
-        <div id="letter2" class="letter"></div>
-        <div id="letter3" class="letter"></div>
-      </div>
+      <div class="mrow">
+        <div id="game">
+          <div id="row1" class="mrow">
+            <div id="letter1" class="letter"></div>
+            <div id="letter2" class="letter"></div>
+            <div id="letter3" class="letter"></div>
+          </div>
 
-      <div id="row2" class="mrow">
-        <div id="letter4" class="letter"></div>
-        <div id="letter5" class="letter"></div>
-        <div id="letter6" class="letter"></div>
-      </div>
+          <div id="row2" class="mrow">
+            <div id="letter4" class="letter"></div>
+            <div id="letter5" class="letter"></div>
+            <div id="letter6" class="letter"></div>
+          </div>
 
-      <div id="row3" class="mrow">
-        <div id="letter7" class="letter"></div>
-        <div id="letter8" class="letter"></div>
-        <div id="letter9" class="letter"></div>
-      </div>
+          <div id="row3" class="mrow">
+            <div id="letter7" class="letter"></div>
+            <div id="letter8" class="letter"></div>
+            <div id="letter9" class="letter"></div>
+          </div>
 
-      <hr>
+          <hr>
 
-      <div id="row4" class="mrow">
-        <!-- <form id="guess" action="" autocomplete="off" method="post"> -->
-          <input id="guess1" class="guess" minlength="1" maxlength="1" style="text-transform: uppercase;" onkeydown="return /[a-z]/i.test(event.key)">
-          <input id="guess2" class="guess" minlength="1" maxlength="1" style="text-transform: uppercase;" onkeydown="return /[a-z]/i.test(event.key)">
-          <input id="guess3" class="guess" minlength="1" maxlength="1" style="text-transform: uppercase;" onkeydown="return /[a-z]/i.test(event.key)">
-        <!-- </form> -->
-      </div>
+          <div id="row4" class="mrow">
+            <!-- <form id="guess" action="" autocomplete="off" method="post"> -->
+              <input id="guess1" class="guess" minlength="1" maxlength="1" style="text-transform: uppercase;" onkeydown="return /[a-z]/i.test(event.key)">
+              <input id="guess2" class="guess" minlength="1" maxlength="1" style="text-transform: uppercase;" onkeydown="return /[a-z]/i.test(event.key)">
+              <input id="guess3" class="guess" minlength="1" maxlength="1" style="text-transform: uppercase;" onkeydown="return /[a-z]/i.test(event.key)">
+            <!-- </form> -->
+          </div>
+        </div>
 
+        <div id="board">
+          <div class="keyboard">
+            <div class="row one">
+                <button id="q">Q</button>
+                <button id="w">W</button>
+                <button id="e">E</button>
+                <button id="r">R</button>
+                <button id="t">T</button>
+                <button id="y">Y</button>
+                <button id="u">U</button>
+                <button id="i">I</button>
+                <button id="o">O</button>
+                <button id="p">P</button>
+                <button class="oneBtn"><i class="fa-solid fa-delete-left"></i></button>
+            </div>
+            <div class="row two">
+                <span style="margin-left: 20px;"></span>
+                <button id="a">A</button>
+                <button id="s">S</button>
+                <button id="d">D</button>
+                <button id="f">F</button>
+                <button id="g">G</button>
+                <button id="h">H</button>
+                <button id="j">J</button>
+                <button id="k">K</button>
+                <button id="l">L</button>
+            </div>
+            <div class="row three">
+              <span style="margin-left: 60px;"></span>
+                <button id="z">Z</button>
+                <button id="x">X</button>
+                <button id="c">C</button>
+                <button id="v">V</button>
+                <button id="b">B</button>
+                <button id="n">N</button>
+                <button id="m">M</button>
+                <button class="threeBtn">Enter</button>
+            </div>
+          </div>
+        </div>
+
+        <div id="list"></div>
       </div>
       <div id="attempts">20</div>
-      <div id="list" class="mrow"></div>
-
-      <div class="keyboard">
-        <div class="row one">
-            <button id="q">Q</button>
-            <button id="w">W</button>
-            <button id="e">E</button>
-            <button id="r">R</button>
-            <button id="t">T</button>
-            <button id="y">Y</button>
-            <button id="u">U</button>
-            <button id="i">I</button>
-            <button id="o">O</button>
-            <button id="p">P</button>
-            <button class="oneBtn"><i class="fa-solid fa-delete-left"></i></button>
-        </div>
-        <div class="row two">
-            <span style="margin-left: 20px;"></span>
-            <button id="a">A</button>
-            <button id="s">S</button>
-            <button id="d">D</button>
-            <button id="f">F</button>
-            <button id="g">G</button>
-            <button id="h">H</button>
-            <button id="j">J</button>
-            <button id="k">K</button>
-            <button id="l">L</button>
-        </div>
-        <div class="row three">
-          <span style="margin-left: 60px;"></span>
-            <button id="z">Z</button>
-            <button id="x">X</button>
-            <button id="c">C</button>
-            <button id="v">V</button>
-            <button id="b">B</button>
-            <button id="n">N</button>
-            <button id="m">M</button>
-            <button class="threeBtn">Enter</button>
-        </div>
     </div>
 
       <!-- <div>
